@@ -6,7 +6,7 @@ using Soenneker.Plaid.OpenApiClientUtil.Abstract;
 namespace Soenneker.Plaid.OpenApiClientUtil.Registrars;
 
 /// <summary>
-/// Registers the OpenAPI client utility for dependency injection.
+/// Registers the Plaid API client provider.
 /// </summary>
 public static class PlaidOpenApiClientUtilRegistrar
 {

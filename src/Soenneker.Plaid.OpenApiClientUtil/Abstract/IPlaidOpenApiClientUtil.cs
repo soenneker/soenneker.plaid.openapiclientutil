@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 namespace Soenneker.Plaid.OpenApiClientUtil.Abstract;
 
 /// <summary>
-/// Exposes a cached OpenAPI client instance.
+/// Provides a cached, authenticated client for the Plaid API.
 /// </summary>
 public interface IPlaidOpenApiClientUtil: IDisposable, IAsyncDisposable
 {
     /// <summary>
-    /// Gets the value.
+    /// Gets the generated client.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A task containing the result of the operation.</returns>
+    /// <returns>The cached Plaid client.</returns>
     ValueTask<PlaidOpenApiClient> Get(CancellationToken cancellationToken = default);
 }
