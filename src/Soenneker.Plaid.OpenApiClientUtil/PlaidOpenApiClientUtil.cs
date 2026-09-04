@@ -11,6 +11,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Plaid.OpenApiClientUtil;
 
+/// <inheritdoc cref="IPlaidOpenApiClientUtil" />
 public sealed class PlaidOpenApiClientUtil : IPlaidOpenApiClientUtil
 {
     private readonly AsyncSingleton<PlaidOpenApiClient> _client;
